@@ -1,83 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ritesh Kumar - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ritesh Kumar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-up {
+        animation: fadeUp 0.8s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0a192f] text-white">
+    <header class="text-center py-12 bg-[#112240] shadow-md fade-up">
+      <h1 class="text-4xl font-bold text-cyan-400 animate-pulse">Ritesh Kumar</h1>
+      <p class="text-gray-300 mt-2 text-sm">Web Development Enthusiast • Curious Coder • Creative Mind</p>
+    </header>
 
-  <header class="text-center mt-10">
-    <h1 class="text-4xl font-bold">Ritesh Kumar</h1>
-  </header>
+    <section class="max-w-4xl mx-auto p-6 mt-10 bg-[#112240] rounded-xl shadow-lg fade-up">
+      <h2 class="text-2xl font-semibold text-cyan-300 mb-3">About Me</h2>
+      <p class="text-gray-200 leading-relaxed transition duration-500 hover:scale-[1.01]">
+        I'm Ritesh Kumar, a motivated and curious learner with a growing interest in web development and technology.
+        I enjoy turning ideas into code and building clean, functional web experiences. I come from a background that
+        values discipline, creativity, and constant learning. Whether it's solving problems or exploring new tools,
+        I’m always up for a challenge.
+      </p>
+    </section>
 
-  <section class="max-w-3xl mx-auto mt-10 px-4">
-    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-    <p class="text-gray-700">
-      I'm Ritesh Kumar, a motivated and curious learner with a growing interest in web development and technology. I enjoy turning ideas into code and building clean, functional web experiences. I come from a background that values discipline, creativity, and constant learning. Whether it's solving problems or exploring new tools, I’m always up for a challenge.
-    </p>
-  </section>
+    <section class="max-w-4xl mx-auto p-6 mt-6 bg-[#112240] rounded-xl shadow-lg grid md:grid-cols-2 gap-6 fade-up">
+      <div>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-3">Skills</h2>
+        <ul class="list-disc list-inside text-gray-300 space-y-1">
+          <li>HTML & CSS</li>
+          <li>JavaScript (Beginner)</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-3">Interests</h2>
+        <ol class="list-decimal list-inside text-gray-300 space-y-1">
+          <li>Creating websites</li>
+          <li>Reading Hindi and English literature</li>
+          <li>Practicing coding challenges</li>
+        </ol>
+      </div>
+    </section>
 
-  <section class="max-w-3xl mx-auto mt-10 px-4">
-    <h2 class="text-2xl font-semibold mb-2">Skills</h2>
-    <ul class="list-disc list-inside text-gray-700">
-      <li>HTML & CSS</li>
-      <li>JavaScript (Beginner)</li>
-      <li>Git & GitHub</li>
-    </ul>
-    <h2 class="text-2xl font-semibold mt-6 mb-2">Interests</h2>
-    <ol class="list-decimal list-inside text-gray-700">
-      <li>Creating websites</li>
-      <li>Reading Hindi and English literature</li>
-      <li>Practicing coding challenges</li>
-    </ol>
-  </section>
-
-  <section class="max-w-5xl mx-auto mt-10 px-4">
-    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-
-    <!-- ✅ Card Component starts -->
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="p-4">
-          <h3 class="text-xl font-bold">Portfolio Website</h3>
-          <p class="text-gray-600 mt-2">A simple and responsive personal portfolio built with HTML to present my skills and contact details.</p>
-          <a href="#" class="inline-block mt-3 text-blue-600 hover:underline">View Project</a>
+    <section class="max-w-6xl mx-auto p-6 mt-6 fade-up">
+      <h2 class="text-2xl font-semibold text-cyan-300 mb-5">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-[#112240] rounded-xl shadow-md transform hover:scale-105 transition duration-300 p-4">
+          <h3 class="text-lg font-semibold text-cyan-200">Portfolio Website</h3>
+          <p class="text-gray-300 mt-2 text-sm">
+            A simple and responsive personal portfolio built with HTML to present my skills and contact details.
+          </p>
+          <a href="#" class="inline-block mt-4">
+            <button class="text-sm bg-cyan-500 text-white px-3 py-1 rounded hover:bg-cyan-600 transition">View Project</button>
+          </a>
+        </div>
+        <div class="bg-[#112240] rounded-xl shadow-md transform hover:scale-105 transition duration-300 p-4">
+          <h3 class="text-lg font-semibold text-cyan-200">Tic Tac Toe (Console Game)</h3>
+          <p class="text-gray-300 mt-2 text-sm">
+            A two-player game built using JavaScript that runs in the browser console. Designed for clarity and simplicity.
+          </p>
+          <a href="#" class="inline-block mt-4">
+            <button class="text-sm bg-cyan-500 text-white px-3 py-1 rounded hover:bg-cyan-600 transition">View Project</button>
+          </a>
+        </div>
+        <div class="bg-[#112240] rounded-xl shadow-md transform hover:scale-105 transition duration-300 p-4">
+          <h3 class="text-lg font-semibold text-cyan-200">LeetCode Contest Selector</h3>
+          <p class="text-gray-300 mt-2 text-sm">
+            A small web app to generate and organize 4 LeetCode problems for custom coding contests.
+          </p>
+          <a href="#" class="inline-block mt-4">
+            <button class="text-sm bg-cyan-500 text-white px-3 py-1 rounded hover:bg-cyan-600 transition">View Project</button>
+          </a>
         </div>
       </div>
+    </section>
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="p-4">
-          <h3 class="text-xl font-bold">Tic Tac Toe (Console Game)</h3>
-          <p class="text-gray-600 mt-2">A two-player game built using JavaScript that runs in the browser console. Designed for clarity and simplicity.</p>
-          <a href="#" class="inline-block mt-3 text-blue-600 hover:underline">View Project</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="p-4">
-          <h3 class="text-xl font-bold">LeetCode Contest Selector</h3>
-          <p class="text-gray-600 mt-2">A small web app to generate and organize 4 LeetCode problems for custom coding contests.</p>
-          <a href="#" class="inline-block mt-3 text-blue-600 hover:underline">View Project</a>
-        </div>
-      </div>
-
-    </div>
-    <!-- ✅ Card Component ends -->
-
-  </section>
-
-  <section class="max-w-3xl mx-auto mt-10 px-4 mb-20">
-    <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-    <p>Email: <a href="mailto:riteshkumar@example.com" class="text-blue-600 hover:underline">riteshkumar@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/riteshkumar" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/riteshkumar</a></p>
-    <p>GitHub: <a href="https://github.com/riteshkumar" target="_blank" class="text-blue-600 hover:underline">github.com/riteshkumar</a></p>
-  </section>
-
-</body>
+    <section class="max-w-4xl mx-auto p-6 mt-6 mb-10 bg-[#112240] rounded-xl shadow-lg fade-up">
+      <h2 class="text-2xl font-semibold text-cyan-300 mb-3">Contact</h2>
+      <p class="text-gray-300">Email: <a href="mailto:riteshkumar@example.com" class="text-cyan-400 hover:underline">riteshkumar@example.com</a></p>
+      <p class="text-gray-300">LinkedIn: <a href="https://linkedin.com/in/riteshkumar" class="text-cyan-400 hover:underline" target="_blank">linkedin.com/in/riteshkumar</a></p>
+      <p class="text-gray-300">GitHub: <a href="https://github.com/riteshkumar" class="text-cyan-400 hover:underline" target="_blank">github.com/riteshkumar</a></p>
+    </section>
+  </body>
 </html>
